@@ -1,0 +1,22 @@
+.uk-table-striped tbody tr:nth-of-type(2n+1), .uk-table-striped > tr:nth-of-type(2n+1) {
+    /* background: #fed84d; */
+
+        /* color: white; */
+border : none;
+ 
+}
+
+
+
+
+
+.uk-align-right .uk-icon-button{
+    background-color: #fed330
+  }
+
+
+.uk-position-center {
+    top: 50%;
+    left: 59% !important;
+    
+}

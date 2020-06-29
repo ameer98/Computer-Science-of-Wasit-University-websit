@@ -1,0 +1,263 @@
+
+ <div *ngIf="loading" class="uk-position-center" >
+    <div uk-spinner="ratio: 3"></div>
+
+</div>
+<section *ngIf="!loading">
+            <nav class="uk-navbar-container one-edge-shadow" uk-navbar >
+                    <div  class="uk-navbar-left icon  " >
+                            <ul class="uk-navbar-nav ">
+                                    <!-- uk-hidden@xl uk-hidden@l uk-hidden@m -->
+                                    <!-- style="z-index:1" -->
+                                    <!-- class="uk-animation-toggle " -->
+                                    <li   style="z-index:2"  >
+                                        <a  (click)="slid()">
+                                            <svg *ngIf="!sli" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"  width="24" height="24" viewBox="0 0 172 172"  style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#939393"><path d="M21.5,35.83333c-2.58456,-0.03655 -4.98858,1.32136 -6.29153,3.55376c-1.30295,2.2324 -1.30295,4.99342 0,7.22582c1.30295,2.2324 3.70697,3.59031 6.29153,3.55376h129c2.58456,0.03655 4.98858,-1.32136 6.29153,-3.55376c1.30295,-2.2324 1.30295,-4.99342 0,-7.22582c-1.30295,-2.2324 -3.70697,-3.59031 -6.29153,-3.55376zM21.5,78.83333c-2.58456,-0.03655 -4.98858,1.32136 -6.29153,3.55376c-1.30295,2.2324 -1.30295,4.99342 0,7.22582c1.30295,2.2324 3.70697,3.59031 6.29153,3.55376h129c2.58456,0.03655 4.98858,-1.32136 6.29153,-3.55376c1.30295,-2.2324 1.30295,-4.99342 0,-7.22582c-1.30295,-2.2324 -3.70697,-3.59031 -6.29153,-3.55376zM21.5,121.83333c-2.58456,-0.03655 -4.98858,1.32136 -6.29153,3.55376c-1.30295,2.2324 -1.30295,4.99342 0,7.22582c1.30295,2.2324 3.70697,3.59031 6.29153,3.55376h129c2.58456,0.03655 4.98858,-1.32136 6.29153,-3.55376c1.30295,-2.2324 1.30295,-4.99342 0,-7.22582c-1.30295,-2.2324 -3.70697,-3.59031 -6.29153,-3.55376z"></path></g></g></svg>
+                                            <svg  *ngIf="sli" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#939393"><path d="M35.76335,28.59668c-2.91628,0.00077 -5.54133,1.76841 -6.63871,4.47035c-1.09737,2.70194 -0.44825,5.79937 1.64164,7.83336l45.09961,45.09961l-45.09961,45.09961c-1.8722,1.79752 -2.62637,4.46674 -1.97164,6.97823c0.65473,2.51149 2.61604,4.4728 5.12753,5.12753c2.51149,0.65473 5.18071,-0.09944 6.97823,-1.97165l45.09961,-45.09961l45.09961,45.09961c1.79752,1.87223 4.46675,2.62641 6.97825,1.97168c2.5115,-0.65472 4.47282,-2.61605 5.12755,-5.12755c0.65472,-2.5115 -0.09946,-5.18073 -1.97168,-6.97825l-45.09961,-45.09961l45.09961,-45.09961c2.11962,-2.06035 2.75694,-5.21064 1.60486,-7.93287c-1.15207,-2.72224 -3.85719,-4.45797 -6.81189,-4.37084c-1.86189,0.05548 -3.62905,0.83363 -4.92708,2.1696l-45.09961,45.09961l-45.09961,-45.09961c-1.34928,-1.38698 -3.20203,-2.16948 -5.13704,-2.1696z"></path></g></g></svg>
+                                        </a>
+                
+                                    </li>
+                
+                            </ul>
+                
+                
+                    </div>
+                    <div class="uk-navbar-right">
+                           
+                        <ul class="uk-navbar-nav ">
+                            <li class=" uk-margin-small-right">
+                                <a  href="#" >
+                                    <span uk-icon="icon: user"></span>
+                                </a>
+                                <div class="uk-navbar-dropdown" uk-dropdown="mode: click">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li class="uk-nav-header">Info User</li>
+                                        <li>Name :<b >{{data.displayName}}</b></li>
+                                        <li>Email :<b >{{data.email}}</b></li>
+                                        <br>
+                                        <li class="uk-nav-divider"></li>
+                                        <li><a (click)="logout()"  class="uk-text-danger"> Logout</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                           
+                        </ul>
+                    </div>
+                </nav>
+
+ 
+    
+    <main class="main-content " >
+    
+        <!-- uk-padding -->
+        <!-- uk-animation-slide-left-medium  -->
+         <!-- class="" -->
+    <nav  *ngIf="sli" class="sidebar open-close-container  uk-background-secondary uk-light  " >
+    
+        <div>
+            <div class="uk-tile  uk-padding-small ">
+                <div class="uk-margin-medium-left">
+                        <p class="uk-text-bold uk-text-large" >
+                            <span class="uk-divider-vertical " style="padding-left: 5px;" ></span>
+                            <span class="uk-text-bold uk-text-large"  >{{data.stage}}</span>
+                        </p>
+                </div>      
+            </div> 
+        </div>
+        <ul class="uk-nav-default uk-nav-parent-icon uk-padding uk-margin-small-bottom " uk-nav>
+        
+            <!-- <li><a routerLink="/home"  [routerLinkActive]="['uk-active-style']" ><span class="uk-margin-small-right   " uk-icon="icon: home"></span> Home</a></li>
+            <li><a routerLink="/user"  [routerLinkActive]="['uk-active-style']" ><span class="uk-margin-small-right   " uk-icon="icon: user"></span> User</a></li>
+            <li><a routerLink="/Certific"  [routerLinkActive]="['uk-active-style']" ><span class="uk-margin-small-right" uk-icon="icon: file-text"></span> certificate</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a (click)="logout()"  class="uk-text-danger"><span class="uk-margin-small-right" uk-icon="icon: sign-out"></span> Logout</a></li> -->
+            <ul uk-accordion>
+                    <li class="uk-open">
+                        <a class="uk-accordion-title" href="#">Course one</a>
+                        <div class="uk-accordion-content">
+                                <ul class="uk-list  uk-list-bullet">
+                                        <li *ngFor="let pd of pdfC1">
+                                                <div class="uk-grid-divider uk-child-width-expand@s" uk-grid>
+                                                        <a href="{{pd.urlpdf}}" target="_blank">{{pd.nameSubject}} Theoretical </a>  
+                                                        <a href="{{pd.urlpdf}}" target="_blank">{{pd.nameSubject}} Practical</a>                                                       
+                                                        <a href="{{pd.urlpdf}}" target="_blank">{{pd.nameSubject}} Link </a>                                                       
+                                                       
+                                                    </div>
+                                                    <span *ngIf="pd.nameTech == data.displayName" class="uk-align-right"  uk-icon="trash" (click)="deletePdf(pd.$key)" uk-tooltip="Delete PDF"></span>
+
+                                            <!-- <a href="{{pd.urlpdf}}" target="_blank">{{pd.nameSubject}} 
+                                            </a> -->
+                                        </li>   
+                                </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="uk-accordion-title" href="#">Course Twe</a>
+                        <div class="uk-accordion-content">
+                                <ul class="uk-list  uk-list-bullet">
+                                        <ul class="uk-list  uk-list-bullet">
+                                                <li *ngFor="let pd of pdfC2">
+                                                        <div class="uk-grid-divider uk-child-width-expand@s" uk-grid>
+                                                                <a href="{{pd.urlpdf}}" target="_blank">{{pd.nameSubject}} Theoretical </a>  
+                                                                <a href="{{pd.urlpdf}}" target="_blank">{{pd.nameSubject}} Practical</a>                                                       
+                                                                <a href="{{pd.urlpdf}}" target="_blank">{{pd.nameSubject}} Link </a>                                                       
+                                                               
+                                                            </div>
+                                                            <span *ngIf="pd.nameTech == data.displayName" class="uk-align-right"  uk-icon="trash" (click)="deletePdf(pd.$key)" uk-tooltip="Delete PDF"></span>
+        
+                                                </li>   
+                                        </ul>   
+                                </ul>
+                        </div>
+                    </li>
+                   
+                </ul>
+        </ul>  
+    </nav>
+    <div class="content-wrapper uk-padding" >
+
+               <div class="">
+                             
+                 <div class="uk-align-right uk-margin-small-bottom">
+                        <a  class="uk-icon-button uk-margin-small-right " uk-icon="plus" ></a>
+                        <div class="uk-navbar-dropdown" uk-dropdown="mode: click">
+                                <ul class="uk-nav uk-navbar-dropdown-nav uk-text-center">
+                                    
+                                    <li  class="uk-dropdown-close"><a uk-icon="file-text" uk-toggle="target: #modal-post">Add post</a></li>
+
+                                    <li class="uk-dropdown-close"><a  uk-icon="file-pdf"  uk-toggle="target: #modal-pdf" >Add pdf</a></li>
+                                </ul>
+                            </div>
+                 </div>
+             
+
+                </div>
+              
+                <article class="uk-padding@s uk-margin uk-margin-auto-left uk-margin-auto-right  uk-width-1-2@l  " *ngFor="let item of post">
+                    <article class="  uk-comment uk-comment-primary">
+                        <header class="uk-comment-header uk-grid-medium uk-flex-middle" uk-grid>
+                            <div class="uk-width-auto">
+                                <img class="uk-comment-avatar" src="{{item.img}}" width="40" height="40" alt="imgUser">
+                            </div>
+                            <div class="uk-width-expand">
+                                <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">{{item.teacher}}</a></h4>
+                                <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+                                    <li><a href="#">{{item.title}}</a></li>
+                                    <li><time >{{item.data | date:' EEEEEE h:mm a '}}</time></li>
+
+                                </ul>
+
+                            </div>
+                            
+                               <div *ngIf="item.teacher == data.displayName"  >
+                                <span   uk-icon="trash" (click)="deletePost(item.$key)" uk-tooltip="Delete post"></span>
+                               </div>                         
+                        </header>
+                        <div class="uk-comment-body">
+                            <p>{{item.body}}</p>
+                        </div>
+                       
+                    </article>
+
+                </article>
+                
+    </div>
+    </main>
+    
+  
+
+</section>
+
+<div id="modal-post" uk-modal [hidden]="submitted">
+        <div class="uk-modal-dialog uk-modal-body">
+            <form [formGroup]="formaddPost" (ngSubmit)="addPost()">
+                    <fieldset class="uk-fieldset">
+                
+                        <legend class="uk-legend uk-text-style">Add post</legend>
+                
+                        <div class="uk-margin">
+                            <input class="uk-input" type="text" placeholder="Title subject"  name="title" formControlName="title" required >
+                        </div>
+                    
+                        <div class="uk-margin">
+                            <textarea class="uk-textarea"  style="resize: vertical;" rows="5" placeholder="Subject" formControlName="body" required></textarea>
+                        </div>
+    
+                    </fieldset>
+                    <p class="uk-text-right">
+                        <button class="uk-button uk-button-default uk-modal-close uk-margin-small-right" type="button">Cancel</button>
+                        <button class="uk-button uk-button-primary  " [disabled]="!formaddPost.valid"  type="submit" >Save</button>
+                    </p>
+                </form>
+            
+        </div>
+    </div>
+    
+
+
+
+<div id="modal-pdf" uk-modal [hidden]="submitted" >
+    <div class="uk-modal-dialog uk-modal-body">
+        <form [formGroup]="formaddPdf" (ngSubmit)="addPdf()"  >
+                <fieldset class="uk-fieldset">
+            
+                    <legend class="uk-legend uk-text-style">Add pdf</legend>
+                    <div class="uk-margin">
+                        <input class="uk-input" type="text" placeholder="Subject Name"  name="title" formControlName="title" required >
+                    </div>
+                
+                    <div class="uk-margin">
+                        <select class="uk-select" formControlName="course"  required>
+                            <option value="" hidden selected >Courses</option>
+                            <option value="course1">Course one</option>
+                            <option value="course2">Course twe</option>
+                        </select>
+                    </div>
+                    <div class="js-upload uk-placeholder uk-text-center" >
+                        <span [hidden]="uploads" uk-icon="icon: cloud-upload"></span>
+                        <div *ngIf="!load" uk-form-custom>
+                            <input type="file" (change)="upload($event)"  accept=".pdf" title="Theoretical lectures"  >
+                            <span class="uk-link">File Theoretical lectures</span>
+                        </div>
+                    
+                        <div *ngIf="load">
+                        {{fileName}}
+                        <span  [hidden]="uploads">
+                        Progress: {{ progs  }}%
+                        </span>
+                         Complete
+                        <progress class="uk-progress" value="{{progs}}" max="100" ></progress>
+                    
+                        </div>  
+                    </div>
+                    <div class="js-upload uk-placeholder uk-text-center" >
+                        <span [hidden]="uploads" uk-icon="icon: cloud-upload"></span>
+                        <div *ngIf="!load2 && uploadss2" uk-form-custom>
+                            <input type="file" (change)="uploads2($event)" accept=".pdf" title="Practical lectures"  >
+                            <span class="uk-link">File Practical lectures</span>
+                        </div>
+                    
+                        <div *ngIf="load2">
+                        {{fileName2}}
+                        <span  [hidden]="uploadss2">
+                        Progress: {{ progs2  }}%
+                        </span>
+                            Complete
+                        <progress class="uk-progress" value="{{progs2}}" max="100" ></progress>
+                    
+                        </div>  
+                    </div>
+
+                    <div class="uk-margin">
+                            <input class="uk-input" type="url" placeholder="Link program Use in practical lectures"  name="title" formControlName="link" required >
+                        </div>
+                    
+                </fieldset>
+                <p class="uk-text-right">
+                    <button class="uk-button uk-button-default uk-modal-close uk-margin-small-right" type="button">Cancel</button>
+                    <button class="uk-button uk-button-primary  "  [disabled]="!formaddPdf.valid "  type="submit" >Save</button>
+                </p>
+            </form>
+        
+    </div>
+</div>

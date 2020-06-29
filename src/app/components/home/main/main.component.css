@@ -1,0 +1,17 @@
+.uk-progress::-webkit-progress-value{background-color:#f04f1e .6s ease !important;transition:width }
+.uk-progress::-moz-progress-bar{background-color:#c34d1e .6s ease !important} 
+.uk-progress::-ms-fill{background-color:#f04f1e .6s ease !important;transition:width .6s ease;border:0}
+
+
+
+
+
+
+.uk-position-center {
+    top: 50%;
+    left: 59% !important;
+    
+}
+.uk-align-right .uk-icon-button{
+    background-color: #fed330
+  }

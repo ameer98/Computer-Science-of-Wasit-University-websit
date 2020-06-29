@@ -1,0 +1,198 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/uikit/dist/css/uikit.min.css";
+@font-face { font-family: 'Baloo2-Medium';src: url('../src/assets/fonts/Baloo_2/Baloo2-Medium.ttf')  }
+@font-face { font-family: 'Baloo2-Regular';src: url('../src/assets/fonts/Baloo_2/Baloo2-Regular.ttf')  }
+@font-face { font-family: 'egular';src: url('../src/assets/fonts/Tajawal/Tajawal-Light.ttf')  }
+/* @font-face { font-family: 'egular';src: url('../src/assets/fonts/Aref_Ruqaa/ArefRuqaa-Regular.ttf')  } */
+
+html {
+
+    font-family:'Baloo2-Regular' !important;
+    /* font-family:'egular' !important */
+
+ }
+ h1{
+    font-family:'Baloo2-Medium' !important;
+    text-shadow: 1px 1px 1px #000, 
+               3px 3px 5px rgba(233, 233, 234, 0.095) !important;
+    /* color: aliceblue; */
+    /* font: bold 40px; */
+    /* background: #0e8dbc; */
+    /* color: white;
+    text-shadow: 0 1px 0 #ccc,
+                 0 2px 0 #c9c9c9,
+                 0 3px 0 #bbb,
+                 0 4px 0 #b9b9b9,
+                 0 5px 0 #aaa,
+                 0 6px 1px rgba(0,0,0,.1),
+                 0 0 5px rgba(0,0,0,.1),
+                 0 1px 3px rgba(0,0,0,.3),
+                 0 3px 5px rgba(0,0,0,.2),
+                 0 5px 10px rgba(0,0,0,.2),
+                 0 10px 10px rgba(0,0,0,.2),
+                 0 20px 20px rgba(0,0,0,.1) !important; */
+                 }
+ /* h1 ,a{
+
+    font-family:'egular' !important;
+    font-size: 50px
+    
+ } */
+ ::-moz-selection { color: #fed330;  background: transparent; }
+ ::selection      { color: #fed330;  background: transparent; } 
+ button:disabled:hover{
+    cursor: not-allowed;
+    content:'hi';
+ }
+.wrap::before {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: '';
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.537);
+
+}
+.lead {
+    font-size: 1.175em;
+    font-weight: 300;
+}
+.uk-logo img {
+    height: 28px;
+}
+
+.uk-logo img {
+    height: 58px;
+}
+
+
+a {
+    outline: 0;
+ }
+
+ .uk-tooltip {
+	background-color: white;
+	color: #242C33;
+	box-shadow: 0 2px 12px rgba(50,50,50,0.1);
+}
+/* ul .uk-nav-default > li > a {
+	padding: 8px 20px !important;
+	transition: all 0.15s ease-out;
+} */
+
+.uk-text-style{
+    color: #fed330  !important
+}
+.uk-active-style{
+    color: #fed330 !important
+}
+/* .uk-button-primary {
+    background-color: #fed330 ;
+    color: #fff;
+    border: 1px solid transparent;
+} */
+
+
+
+
+/* 
+.uk-notification {
+    width: auto !important;
+} */
+
+
+
+.uk-notification a{
+    margin-left: 44px;
+    padding: 6px;
+    color: #f0506e !important;
+    background: white;
+    /* width: 30px;
+    height: 30px; */
+    border-radius: 50%;
+}
+
+/* .uk-notification-bottom-center, .uk-notification-top-center {
+    left: 50%;
+    margin-left: -208px;
+} */
+
+.uk-notification-close {
+
+    display: none;
+    position: absolute;
+    top: 14px;
+    right: -13px !important;
+
+}
+/* 
+.uk-close {
+    color: #f00;
+    -webkit-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+        transition-property: all;
+    -webkit-transition-property: color,opacity;
+    transition-property: color,opacity;
+    background: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+} */
+
+
+
+
+
+
+
+
+/* .uk-animation-shake:hover {
+    -webkit-animation-name: uk-shake !important;
+    animation-name: uk-shake !important;
+  } */
+
+
+
+
+
+
+
+
+
+
+
+
+.animate .uk-button-default:hover {
+    background-color: #444 !important;
+    color: #fed330 !important;
+    border: none;
+
+}
+
+progress {
+    color: lightblue !important;;
+  }
+  
+  progress::-webkit-progress-value {
+    background: #fed330 !important;;
+  }
+  
+  progress::-moz-progress-bar {
+    background: #fed330 !important;;
+  }
+  
+  progress::-webkit-progress-value {
+    background: red !important;
+  }
+  
+  progress::-webkit-progress-bar {
+    background: blue !important;
+  }
+
+.uk-progress::-webkit-progress-value , .uk-progress::-moz-progress-bar ,.uk-progress::-ms-fill{background-color:#f04f1e !important}
+
+
+.uk-spinner {
+    color: black !important;
+  
+}

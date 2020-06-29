@@ -1,0 +1,15 @@
+
+@media (min-width: 292px) and (max-width: 435px) {
+   
+    .uk-margin-small-right {
+        margin-right: 0px !important;
+    }
+    .uk-light .uk-icon-button {
+        background-color: transparent;
+    }
+    .uk-navbar-left .uk-navbar-nav a:nth-child(1){
+        margin-right: 5px !important ;
+    }
+    .uk-icon-button {
+        width: auto !important;}
+}

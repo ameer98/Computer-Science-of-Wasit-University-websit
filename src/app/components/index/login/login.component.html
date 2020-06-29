@@ -1,0 +1,155 @@
+<div class=" wrap uk-background-norepeat uk-background-cover uk-background-center-center uk-cover-container uk-background-secondary">
+
+    <img data-srcset="https://picsum.photos/640/700/?image=4 640w,
+                 https://picsum.photos/960/700/?image=4 960w,
+                 https://picsum.photos/1200/900/?image=4 1200w,
+                 https://picsum.photos/2000/1000/?image=4 2000w"
+         sizes="100vw"
+         data-src="https://picsum.photos/1200/900/?image=3" alt="" data-uk-cover data-uk-img
+    >
+    <div class="uk-flex uk-flex-center uk-flex-middle uk-height-viewport uk-position-z-index uk-position-relative" data-uk-height-viewport="min-height: 400">
+        <!-- NAV -->
+        <div class="uk-position-top uk-light">
+                <div class="uk-container uk-container-small uk-margin-small-top">
+                  <nav class="uk-navbar-container uk-navbar-transparent" data-uk-navbar>
+                    <div class="uk-navbar-left">
+                      <div class="uk-navbar-nav">
+                          <a routerLink="/" class="uk-icon-button  uk-margin-small-right"  >
+                            <div class="fir-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#8f8d8d"><path d="M86,14.33333c-1.91435,0.00025 -3.74903,0.76638 -5.09506,2.1276l-72.28255,63.07226c-0.9155,0.67554 -1.45577,1.74571 -1.45573,2.88347c0,1.97902 1.60431,3.58333 3.58333,3.58333h17.91667v57.33333c0,3.956 3.21067,7.16667 7.16667,7.16667h28.66667c3.956,0 7.16667,-3.21067 7.16667,-7.16667v-43h28.66667v43c0,3.956 3.21067,7.16667 7.16667,7.16667h28.66667c3.956,0 7.16667,-3.21067 7.16667,-7.16667v-57.33333h17.91667c1.97902,0 3.58333,-1.60431 3.58333,-3.58333c0.00004,-1.13776 -0.54023,-2.20792 -1.45573,-2.88347l-72.24056,-63.03027c-0.01394,-0.01406 -0.02794,-0.02805 -0.04199,-0.04199c-1.34603,-1.36123 -3.18071,-2.12736 -5.09506,-2.1276z"></path></g></g></svg>
+                            </div>
+                            <div class="sec-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 172 172" style=" fill:#fff;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#fff"><path d="M86,14.33333c-1.91435,0.00025 -3.74903,0.76638 -5.09506,2.1276l-72.28255,63.07226c-0.9155,0.67554 -1.45577,1.74571 -1.45573,2.88347c0,1.97902 1.60431,3.58333 3.58333,3.58333h17.91667v57.33333c0,3.956 3.21067,7.16667 7.16667,7.16667h28.66667c3.956,0 7.16667,-3.21067 7.16667,-7.16667v-43h28.66667v43c0,3.956 3.21067,7.16667 7.16667,7.16667h28.66667c3.956,0 7.16667,-3.21067 7.16667,-7.16667v-57.33333h17.91667c1.97902,0 3.58333,-1.60431 3.58333,-3.58333c0.00004,-1.13776 -0.54023,-2.20792 -1.45573,-2.88347l-72.24056,-63.03027c-0.01394,-0.01406 -0.02794,-0.02805 -0.04199,-0.04199c-1.34603,-1.36123 -3.18071,-2.12736 -5.09506,-2.1276z"></path></g></g></svg>
+
+                            </div>
+
+                        </a>
+                      </div>
+                    </div>
+                    
+                    
+                  </nav>
+                </div>
+              </div>
+              <!-- /NAV -->
+              
+
+            <div class="uk-section  uk-flex uk-flex-middle uk-animation-fade" uk-height-viewport>
+                    <div class="uk-width-1-1">
+                        <div class="uk-container">
+                            <div class="uk-grid-margin uk-grid uk-grid-stack" uk-grid>
+                                <div class="uk-width-1-1@m">
+                                    <div class="uk-margin  uk-margin-auto uk-card uk-card-default uk-card-body uk-box-shadow-large">
+                                            <div class="profile-card__img uk-text-center ">
+                                                    <img src="../../../../assets/img/logo.png" alt="Logo">
+                                                    <div class="uk-margin-s-top">
+                                                        <h3 class="uk-card-title uk-text-center">Login</h3>
+                                                    </div>
+
+                                                </div>  
+                                                
+                                        <!-- <h3 class="uk-card-title uk-text-center">Welcome back!</h3> -->
+                                        <form  [formGroup]="Formlogin" (ngSubmit)="myLogin()" style="margin-top: -92px !important;">
+                                            
+                                            <div class="uk-margin">
+                                                <div class="uk-inline uk-width-1-1">
+                                                    <span class="uk-form-icon" uk-icon="icon: mail"></span>
+                                                    <input class="uk-input uk-form-large" type="text" placeholder="E-mail" name="email" formControlName="email"  required>
+                                                </div>
+                                            </div>
+                                            <div class="uk-margin">
+                                                <div class="uk-inline uk-width-1-1">
+                                                    <span class="uk-form-icon" uk-icon="icon: lock"></span>
+                                                    <input class="uk-input uk-form-large" type="{{ isActive ? 'password' : 'text' }}" placeholder="Password" name="password" formControlName="password" required>
+                                                    <!-- <button></button> -->
+                                                    <a class="uk-form-icon uk-form-icon-flip"  (click)="eye()">
+                                                            <svg *ngIf="!isActive"  xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#999999"><path d="M30.15039,20.01628l-10.13411,10.13411l16.40495,16.40495c-19.11239,15.36761 -28.10189,35.2607 -28.68066,36.61719l-1.20378,2.82747l1.20378,2.82747c0.95317,2.22883 23.99344,54.50586 78.25944,54.50586c14.80883,0 27.2133,-3.94498 37.54101,-9.6582l18.3086,18.30859l10.13411,-10.13411zM86,28.66667c-8.67883,0 -16.48311,1.43781 -23.59961,3.69531l11.79981,11.7998c3.73383,-0.7095 7.63597,-1.16178 11.7998,-1.16178c38.67133,0 58.53465,32.88134 63.71615,42.97201c-2.107,4.03483 -6.72424,11.86699 -13.95541,19.75032l10.2181,10.2181c12.04,-13.029 17.81476,-26.03079 18.2806,-27.11295l1.20378,-2.82747l-1.20378,-2.82747c-0.95317,-2.22883 -23.99344,-54.50586 -78.25944,-54.50586zM46.66732,56.80143l14.69727,14.69727c-2.54096,4.24622 -4.03125,9.19008 -4.03125,14.5013c0,15.80967 12.857,28.66667 28.66667,28.66667c5.31122,0 10.25508,-1.49029 14.50131,-4.03125l12.3597,12.3597c-7.69485,3.64868 -16.6248,6.00489 -26.861,6.00489c-38.67133,0 -58.53465,-32.88134 -63.71615,-42.97201c2.97864,-5.70437 10.97118,-18.92775 24.38346,-29.22656zM87.52572,57.4873l26.98698,26.98698c-0.78117,-14.56983 -12.41715,-26.20581 -26.98698,-26.98698zM72.19857,82.33268l17.46875,17.46875c-1.17367,0.3155 -2.39229,0.5319 -3.66732,0.5319c-7.90483,0 -14.33333,-6.4285 -14.33333,-14.33333c0,-1.27503 0.2164,-2.49365 0.5319,-3.66732z"></path></g></g></svg>
+                                                            <svg *ngIf="isActive" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#999999"><path d="M86,28.66667c-57.33333,0 -78.83333,57.33333 -78.83333,57.33333c0,0 21.5,57.33333 78.83333,57.33333c57.33333,0 78.83333,-57.33333 78.83333,-57.33333c0,0 -21.5,-57.33333 -78.83333,-57.33333zM86,43c37.81133,0 56.93626,30.58084 63.12826,42.97201c-6.19917,12.30517 -25.46742,43.02799 -63.12826,43.02799c-37.81133,0 -56.93626,-30.58084 -63.12826,-42.97201c6.20633,-12.30517 25.46742,-43.02799 63.12826,-43.02799zM86,57.33333c-15.83117,0 -28.66667,12.8355 -28.66667,28.66667c0,15.83117 12.8355,28.66667 28.66667,28.66667c15.83117,0 28.66667,-12.8355 28.66667,-28.66667c0,-15.83117 -12.8355,-28.66667 -28.66667,-28.66667zM86,71.66667c7.91917,0 14.33333,6.41417 14.33333,14.33333c0,7.91917 -6.41417,14.33333 -14.33333,14.33333c-7.91917,0 -14.33333,-6.41417 -14.33333,-14.33333c0,-7.91917 6.41417,-14.33333 14.33333,-14.33333z"></path></g></g></svg>
+                                                    </a> 
+                                                </div>
+                                            </div>
+                                            <div class="uk-margin   uk-grid">
+                                              <label><input class="uk-checkbox" type="checkbox" formControlName="rememberLogin"  checked> Rmember me</label>
+                                            
+                                          </div>
+
+                                          <!-- <a class="uk-button uk-button-default" href="#modal-center" uk-toggle>Open</a> -->
+
+
+                                            <div class="uk-margin">
+                                                    <button  type="submit" [disabled]="!Formlogin.valid" class="uk-button uk-button-primary uk-button-large uk-width-1-1 " >
+                                                        <!-- Submit -->
+                                                        <div *ngIf="!loading">Submit</div>
+                                                        <div *ngIf="loading" class="uk-margin-medium-left">
+                                                                <svg   class="loading" version="1.1" id="L4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                                viewBox="0 0 100 100"  enable-background="new 0 0 0 0" xml:space="preserve">
+                                                                <circle fill="#fff" stroke="none" cx="6" cy="50" r="6">
+                                                                  <animate
+                                                                    attributeName="opacity"
+                                                                    dur="1s"
+                                                                    values="0;1;0"
+                                                                    repeatCount="indefinite"
+                                                                    begin="0.1"/>    
+                                                                </circle>
+                                                                <circle fill="#fff" stroke="none" cx="26" cy="50" r="6">
+                                                                  <animate
+                                                                    attributeName="opacity"
+                                                                    dur="1s"
+                                                                    values="0;1;0"
+                                                                    repeatCount="indefinite" 
+                                                                    begin="0.2"/>       
+                                                                </circle>
+                                                                <circle fill="#fff" stroke="none" cx="46" cy="50" r="6">
+                                                                  <animate
+                                                                    attributeName="opacity"
+                                                                    dur="1s"
+                                                                    values="0;1;0"
+                                                                    repeatCount="indefinite" 
+                                                                    begin="0.3"/>     
+                                                                </circle>
+                                                              </svg>
+                                                                </div>
+                                                    </button>
+
+                                                <!-- <button type="submit" class="uk-button uk-button-primary uk-button-large uk-width-1-1 " (click)="myLogin()">Submit</button> -->
+                                            </div>
+                                            
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    
+    
+    
+  </div>
+
+
+
+  <!-- <a class="uk-button uk-button-default" href="#modal-center" uk-toggle>Open</a> -->
+
+<div id="modal-center" class="uk-flex-top" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <h2 class="uk-modal-title">Headline</h2>
+        <form  [formGroup]="FormResetPass" (ngSubmit)="myLogin()" >
+                                            
+          <div class="uk-margin">
+              <div class="uk-inline uk-width-1-1">
+                  <span class="uk-form-icon" uk-icon="icon: mail"></span>
+                  <input class="uk-input uk-form-large" type="text" placeholder="E-mail" name="email" formControlName="email"  required>
+              </div>
+          </div>
+         
+          <p class="uk-text-right">
+            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+            <button type="submit" [disabled]="!FormResetPass.valid" class="uk-button uk-button-primary" type="button">Save</button>
+        </p>
+          
+      </form>
+    </div>
+</div>
